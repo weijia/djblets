@@ -7,7 +7,7 @@ from djblets.webapi.decorators import webapi_login_required, \
                                       webapi_permission_required, \
                                       webapi_request_fields
 from djblets.webapi.resources import WebAPIResource
-
+from django.conf.urls.defaults import patterns, include
 
 class ExtensionResource(WebAPIResource):
     """A default resource for representing an Extension model."""
